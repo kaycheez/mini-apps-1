@@ -4,25 +4,30 @@
   <meta charset="utf-8">
   <title>TIC TAC TOE</title>
 </header>
-<body onload="placeTicOnClick();">
-  <h1 align="center">TIC TAC TOE</h1>
-  <table width="180px" border="0" align="center" bgcolor="#000000">
-    <tr bgcolor="#ffffff">
-      <td height="60px" width="60px"></td>
-      <td width="60px"></td>
-      <td width="60px"></td>
-    </tr>
-    <tr bgcolor="#ffffff">
-      <td height="60px" width="60px"></td>
-      <td width="60px"></td>
-      <td width="60px"></td>
-    </tr>
-    <tr bgcolor="#ffffff">
-      <td height="60px" width="60px"></td>
-      <td width="60px"></td>
-      <td width="60px"></td>
-    </tr>
-  </table>
+<body onload="placeClickOnTic(), addClickOnButt();">
+  <div align="center">
+    <h1 align="center">TIC TAC TOE</h1>
+    <div id='state'></div>
+    <button align="center" style="margin:10px">Clear Board</button>
+    <table width="180px" border="1px" align="center" bgcolor="#000000">
+      <tr bgcolor="#ffffff">
+        <td height="60px" width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+      </tr>
+      <tr bgcolor="#ffffff">
+        <td height="60px" width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+      </tr>
+      <tr bgcolor="#ffffff">
+        <td height="60px" width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+        <td width="60px" align="center"></td>
+      </tr>
+    </table>
+
+  </div>
   <script src="app.js"></script>
 </body>
 </html>
