@@ -3,6 +3,7 @@ const choices = ['x', 'o'];
 const cells = document.getElementsByTagName("td");
 const cellArr = Array.from(cells);
 const rows = Array.from(document.getElementsByTagName("tr"));
+const scoreboard = document.getElementById('scoreboard');
 let useX = true;
 let matrix;
 let winner;
@@ -80,16 +81,25 @@ const checkWinner = function() {
 };
 
 const endGame = function() {
-
+  let p = document.createElement('p');
+  if (winner === 'tie') {
+    p.textContent = "YALL BOTH SUCK";
+    scoreboard.appendChild(p);
+  } else {
+    p.textContent = `${winner} gonna give it to ya!`;
+    scoreboard.appendChild(p);
+  }
 }
 
 const clearBoard = function() {
   cellArr.forEach((cell) => {
     cell.textContent = '';
   });
-  updateMatrix();
   useX = true;
   winner = undefined;
+  scoreboard.innerHTML = '';
+  console.log(scoreboard);
+  updateMatrix();
 };
 
 const addClickOnButt = function() {
