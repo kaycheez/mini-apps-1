@@ -36,7 +36,7 @@ const updateMatrix = function() {
     });
   });
   checkWinner();
-}
+};
 
 const checkWinner = function() {
   const checkRows = function() {
@@ -89,7 +89,7 @@ const endGame = function() {
     p.textContent = `${winner} gonna give it to ya!`;
     scoreboard.appendChild(p);
   }
-}
+};
 
 const clearBoard = function() {
   cellArr.forEach((cell) => {
