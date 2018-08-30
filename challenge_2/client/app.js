@@ -27,7 +27,7 @@ const send = function(text) {
       createCsv(data);
     }, 
     error: function(data) {
-      console.log('errorrr fooo');
+      console.log('error');
     }
   });
 };
